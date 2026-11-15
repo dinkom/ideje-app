@@ -1,5 +1,5 @@
-// Verzija aplikacije: povećaj kod svake veće promjene (npr. ideje-v3).
-const VERZIJA = 'ideje-v3';
+// Verzija aplikacije: povećaj kod svake veće promjene (npr. ideje-v4).
+const VERZIJA = 'ideje-v4';
 const OSNOVNO = ['./', 'index.html', 'cards.json', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
