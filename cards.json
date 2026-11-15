@@ -1,0 +1,189 @@
+{
+  "teme": {
+    "Navike": { "boja": "#2e7d5b", "ikona": "🔁" },
+    "Psihologija": { "boja": "#6a4c93", "ikona": "🧠" },
+    "Produktivnost": { "boja": "#1f6fb2", "ikona": "⏱️" },
+    "Zdravlje i trening": { "boja": "#b83a2e", "ikona": "💪" },
+    "Novac": { "boja": "#a86d14", "ikona": "💰" },
+    "Filozofija": { "boja": "#455a64", "ikona": "🏛️" },
+    "Komunikacija": { "boja": "#00796b", "ikona": "💬" },
+    "Kreativnost": { "boja": "#a3195b", "ikona": "🎨" }
+  },
+  "kartice": [
+    {
+      "id": "n01", "tema": "Navike", "emoji": "🪪",
+      "naslov": "Identitet prije cilja",
+      "tekst": "Trajne promjene ne počinju ciljem („želim smršaviti“), nego identitetom („ja sam osoba koja trenira“). Svaka mala radnja je glas za osobu kakva želiš biti. Kad navika postane dio toga tko jesi, više ne treba toliko motivacije.",
+      "probaj": "Za jednu naviku koju gradiš napiši rečenicu „Ja sam osoba koja…“. Danas napravi jednu sitnu radnju koja je glas za tu osobu.",
+      "izvor": "Atomske navike", "autor": "James Clear"
+    },
+    {
+      "id": "n02", "tema": "Navike", "emoji": "⏲️",
+      "naslov": "Pravilo dvije minute",
+      "tekst": "Svaku novu naviku smanji na verziju koja traje dvije minute: ne „čitat ću 30 minuta“, nego „pročitat ću jednu stranicu“. Prvo savladaš pojavljivanje, a tek onda trajanje i intenzitet. Navika koja ne postoji ne može se ni poboljšati.",
+      "probaj": "Izaberi naviku koju odgađaš i definiraj njezinu dvominutnu verziju. Napravi je još danas, čak i ako ti se ne da.",
+      "izvor": "Atomske navike", "autor": "James Clear"
+    },
+    {
+      "id": "n03", "tema": "Navike", "emoji": "📈",
+      "naslov": "1 % bolje svaki dan",
+      "tekst": "Male promjene izgledaju nebitno dok se ne zbroje kroz vrijeme. Rezultati kasne za navikama: dugo ne vidiš ništa, a onda napredak naglo postane vidljiv. Gledaj smjer kojim ideš, ne trenutni rezultat.",
+      "probaj": "Odaberi jedno područje i odredi sitno poboljšanje koje možeš ponavljati svaki dan. Prati ga 30 dana u kalendaru.",
+      "izvor": "Atomske navike", "autor": "James Clear"
+    },
+    {
+      "id": "n04", "tema": "Navike", "emoji": "⚓",
+      "naslov": "Zakači naviku na postojeću",
+      "tekst": "Novu naviku najlakše je vezati uz nešto što već radiš svaki dan: „Nakon što skuham kavu, napravit ću 10 sklekova.“ Postojeća rutina postaje okidač, pa ne moraš ni pamtiti ni odlučivati. Fogg savjetuje i kratko „slavlje“ odmah nakon radnje, jer dobar osjećaj učvršćuje naviku.",
+      "probaj": "Napiši recept: „Nakon što [postojeća radnja], ja ću [sitna nova radnja].“ Testiraj ga ovaj tjedan.",
+      "izvor": "Tiny Habits", "autor": "BJ Fogg"
+    },
+    {
+      "id": "p01", "tema": "Psihologija", "emoji": "🐇",
+      "naslov": "Brzo i sporo razmišljanje",
+      "tekst": "Sustav 1 je brz, automatski i intuitivan, a Sustav 2 spor, svjestan i naporan. Većinu odluka donosi Sustav 1, što je obično u redu, ali u složenim situacijama vodi u predvidljive pogreške. Problem je što nam brzi odgovor djeluje jednako uvjerljivo kao promišljen.",
+      "probaj": "Prije sljedeće važne odluke stani i pitaj se: „Je li ovo prvi dojam ili sam stvarno provjerio?“ Zapiši jedan argument protiv svog izbora.",
+      "izvor": "Misliti, brzo i sporo", "autor": "Daniel Kahneman"
+    },
+    {
+      "id": "p02", "tema": "Psihologija", "emoji": "⚖️",
+      "naslov": "Gubitak boli više",
+      "tekst": "Gubitak nam psihološki teži otprilike dvostruko više od jednako velikog dobitka. Zato se držimo loših odluka, izbjegavamo razumne rizike i precjenjujemo ono što već imamo. Kad znaš za tu pristranost, odluke procjenjuješ trezvenije.",
+      "probaj": "Sjeti se nečega što zadržavaš samo da ga ne „izgubiš“ (pretplata, projekt, stvar). Pitaj se: bih li to izabrao danas da ga nemam?",
+      "izvor": "Misliti, brzo i sporo", "autor": "Daniel Kahneman"
+    },
+    {
+      "id": "p03", "tema": "Psihologija", "emoji": "🕯️",
+      "naslov": "Posljednja sloboda",
+      "tekst": "Frankl je preživio nacističke logore i zaključio da čovjeku mogu oduzeti gotovo sve osim posljednje slobode: da izabere svoj stav prema okolnostima. Oni koji su imali razlog za život, nekoga ili nešto što ih čeka, lakše su podnosili patnju.",
+      "probaj": "Kad te danas nešto iznervira, uhvati trenutak prije reakcije i svjesno izaberi kako ćeš odgovoriti.",
+      "izvor": "Čovjekovo traganje za smislom", "autor": "Viktor Frankl"
+    },
+    {
+      "id": "p04", "tema": "Psihologija", "emoji": "🌱",
+      "naslov": "Rastući način razmišljanja",
+      "tekst": "S fiksnim načinom razmišljanja vjerujemo da su sposobnosti urođene, pa izbjegavamo izazove, a neuspjeh doživljavamo kao presudu. S rastućim, sposobnosti vidimo kao nešto što se razvija trudom, strategijom i učenjem. Pohvala truda i procesa potiče rast više od pohvale talenta.",
+      "probaj": "Kad pomisliš „nisam dobar u tome“, dodaj „još“. Danas nekome pohvali trud i napredak, a ne talent.",
+      "izvor": "Mindset", "autor": "Carol Dweck"
+    },
+    {
+      "id": "r01", "tema": "Produktivnost", "emoji": "🎯",
+      "naslov": "Duboki rad",
+      "tekst": "Duboki rad je fokusiran rad bez ometanja koji tjera tvoje sposobnosti do granice, a upravo on stvara najveću vrijednost. Plitki rad (mailovi, poruke, sitnice) lako je ponoviti i lako zamijeniti. Pažnja se trenira: tko stalno skače na mobitel, gubi sposobnost duge koncentracije.",
+      "probaj": "Rezerviraj jedan blok od 60 do 90 minuta, mobitel stavi u drugu sobu i radi samo jednu važnu stvar.",
+      "izvor": "Deep Work", "autor": "Cal Newport"
+    },
+    {
+      "id": "r02", "tema": "Produktivnost", "emoji": "🧭",
+      "naslov": "Važno, a ne hitno",
+      "tekst": "Zadatke možeš podijeliti po tome jesu li hitni i jesu li važni. Većina ljudi živi u hitnom, a najveći pomaci dolaze iz kvadranta „važno, ali nije hitno“: planiranje, zdravlje, odnosi, učenje. Ako tome ne daš termin, uvijek će ga istisnuti nešto glasnije.",
+      "probaj": "Zapiši tri važne, a ne hitne stvari za ovaj tjedan i svakoj daj konkretan termin u kalendaru.",
+      "izvor": "7 navika uspješnih ljudi", "autor": "Stephen R. Covey"
+    },
+    {
+      "id": "r03", "tema": "Produktivnost", "emoji": "⌛",
+      "naslov": "Parkinsonov zakon",
+      "tekst": "Posao se širi tako da ispuni vrijeme koje je za njega predviđeno. Ako za zadatak imaš cijeli dan, trajat će cijeli dan. Kraći i jasni rokovi tjeraju na bit i režu nepotrebno usavršavanje.",
+      "probaj": "Za sljedeći zadatak postavi upola kraći rok nego inače i uključi timer.",
+      "izvor": "Parkinsonov zakon (esej, 1955.)", "autor": "C. Northcote Parkinson"
+    },
+    {
+      "id": "z01", "tema": "Zdravlje i trening", "emoji": "😴",
+      "naslov": "San je temelj, ne luksuz",
+      "tekst": "San utječe na pamćenje, raspoloženje, imunitet, apetit i oporavak mišića. Walker navodi da odraslima treba 7 do 9 sati i da kronično kraći san narušava gotovo svaki sustav u tijelu. Redovito vrijeme lijeganja i buđenja važnije je od nadoknađivanja vikendom.",
+      "probaj": "Ovaj tjedan budi se svaki dan u isto vrijeme, i vikendom, pa prati kako se osjećaš.",
+      "izvor": "Why We Sleep", "autor": "Matthew Walker"
+    },
+    {
+      "id": "z02", "tema": "Zdravlje i trening", "emoji": "☀️",
+      "naslov": "Jutarnje svjetlo",
+      "tekst": "Dnevno svjetlo ubrzo nakon buđenja namješta unutarnji sat: lakše se razbudiš ujutro i lakše zaspiš navečer. Huberman preporučuje nekoliko minuta vani po vedrom danu, a dulje kad je oblačno. Svjetlo kroz prozor puno je slabije od vanjskog.",
+      "probaj": "Sutra u prvih sat vremena nakon buđenja provedi 5 do 10 minuta vani, bez sunčanih naočala.",
+      "izvor": "Huberman Lab (podcast)", "autor": "Andrew Huberman"
+    },
+    {
+      "id": "z03", "tema": "Zdravlje i trening", "emoji": "🫀",
+      "naslov": "Kondicija kao osiguranje",
+      "tekst": "Attia ističe da je VO2max, mjera aerobne kondicije, jedan od najjačih pokazatelja dugovječnosti. Uz snagu i mišićnu masu, kondicija određuje koliko ćeš u starosti biti samostalan. Njegov recept je puno laganog rada u zoni 2 i malo intenzivnih intervala.",
+      "probaj": "Ovaj tjedan dodaj jednu sesiju od 30 do 45 minuta laganog kardija, tempom na kojem još možeš pričati.",
+      "izvor": "Outlive", "autor": "Peter Attia"
+    },
+    {
+      "id": "m01", "tema": "Novac", "emoji": "🧳",
+      "naslov": "Bogatstvo je ono što ne vidiš",
+      "tekst": "Skupi auto pokazuje koliko je netko potrošio, a ne koliko ima. Bogatstvo je novac koji nije potrošen: rezerva koja daje slobodu i mogućnost izbora. Najveća vrijednost novca je kontrola nad vlastitim vremenom.",
+      "probaj": "Pogledaj zadnji veći trošak i pitaj se: je li mi kupio slobodu ili samo dojam? Odluči koliku „rezervu slobode“ želiš imati.",
+      "izvor": "Psihologija novca", "autor": "Morgan Housel"
+    },
+    {
+      "id": "m02", "tema": "Novac", "emoji": "🏺",
+      "naslov": "Plati prvo sebi",
+      "tekst": "Od svakog prihoda prvo odvoji dio za sebe, a Clason predlaže barem desetinu, i to prije nego platiš bilo što drugo. Ako štediš ono što ostane, obično ne ostane ništa. Automatski prijenos na dan primanja pretvara štednju u naviku bez odlučivanja.",
+      "probaj": "Postavi trajni nalog na štednju za dan kad primaš prihod, makar s malim iznosom.",
+      "izvor": "Najbogatiji čovjek u Babilonu", "autor": "George S. Clason"
+    },
+    {
+      "id": "m03", "tema": "Novac", "emoji": "⏳",
+      "naslov": "Vrijeme radi za tebe",
+      "tekst": "Housel ističe da je velika većina bogatstva Warrena Buffetta nastala nakon njegove 65. godine. Ključ nije samo dobar prinos, nego dugo trajanje. Složene kamate na početku daju malo, a na kraju puno, zato je najvažnije ne prekidati proces.",
+      "probaj": "U kalkulatoru složenih kamata usporedi koliko bi ista mjesečna štednja narasla za 10, a koliko za 20 godina.",
+      "izvor": "Psihologija novca", "autor": "Morgan Housel"
+    },
+    {
+      "id": "f01", "tema": "Filozofija", "emoji": "✋",
+      "naslov": "Što je u tvojoj moći",
+      "tekst": "Epiktet stvari dijeli na one koje su u našoj moći, poput prosudbi, namjera i postupaka, i one koje nisu: tuđa mišljenja, ugled, okolnosti. Nemir nastaje kad se borimo s onim što ne kontroliramo. Snagu treba ulagati samo u ono prvo.",
+      "probaj": "Uzmi jednu brigu i podijeli je na papiru u dva stupca: „moje“ i „nije moje“. Za stupac „moje“ odredi jedan korak.",
+      "izvor": "Priručnik (Enchiridion)", "autor": "Epiktet"
+    },
+    {
+      "id": "f02", "tema": "Filozofija", "emoji": "🪨",
+      "naslov": "Prepreka postaje put",
+      "tekst": "Marko Aurelije piše da ono što stoji na putu djelovanju samo postaje djelovanje. Prepreka je prilika za vježbanje vrline: strpljenja, hrabrosti, snalažljivosti. Ryan Holiday je na toj misli izgradio knjigu „Prepreka je put“.",
+      "probaj": "Za problem koji te trenutno muči pitaj se: koju osobinu mi ovo daje priliku vježbati?",
+      "izvor": "Meditacije", "autor": "Marko Aurelije"
+    },
+    {
+      "id": "f03", "tema": "Filozofija", "emoji": "📜",
+      "naslov": "Život nije kratak",
+      "tekst": "Seneka tvrdi da život nije kratak, nego ga mi skraćujemo trošeći vrijeme na tuđe zahtjeve, pohlepu i odgađanje. Novac pažljivo čuvamo, a vrijeme dajemo olako. Tko živi svjesno, ima ga dovoljno.",
+      "probaj": "Navečer zapiši na što ti je danas otišlo najviše vremena i je li to bio tvoj izbor.",
+      "izvor": "O kratkoći života", "autor": "Seneka"
+    },
+    {
+      "id": "k01", "tema": "Komunikacija", "emoji": "🏷️",
+      "naslov": "Ime je najdraži zvuk",
+      "tekst": "Carnegie ističe da je čovjeku vlastito ime najdraži zvuk. Kad zapamtiš i koristiš nečije ime, pokazuješ da ti je ta osoba važna. Uz to se iskreno zanimaj za druge i pusti ih da pričaju o sebi.",
+      "probaj": "Kod sljedećeg upoznavanja odmah ponovi ime u rečenici i iskoristi ga još jednom na kraju razgovora.",
+      "izvor": "Kako steći prijatelje i utjecati na ljude", "autor": "Dale Carnegie"
+    },
+    {
+      "id": "k02", "tema": "Komunikacija", "emoji": "🪞",
+      "naslov": "Zrcaljenje",
+      "tekst": "Bivši FBI-jev pregovarač Voss koristi jednostavnu tehniku: ponovi zadnjih jednu do tri riječi sugovornika upitnom intonacijom. Ljudi tada sami nastave objašnjavati, a ti saznaš više bez ispitivanja. Usput stvaraš osjećaj da ih stvarno slušaš.",
+      "probaj": "U sljedećem razgovoru dvaput iskoristi zrcaljenje, a onda šuti i pričekaj.",
+      "izvor": "Never Split the Difference", "autor": "Chris Voss"
+    },
+    {
+      "id": "k03", "tema": "Komunikacija", "emoji": "🕊️",
+      "naslov": "Opažanje bez prosudbe",
+      "tekst": "Rosenberg predlaže četiri koraka: opažanje, osjećaj, potreba i molba. Najteži je prvi: opisati činjenicu bez etikete. „Kasnio si 20 minuta“ otvara razgovor, a „Nikad nisi točan“ izaziva obranu.",
+      "probaj": "Sljedeću kritiku preformuliraj: „Kad [činjenica], osjećam se [osjećaj] jer mi treba [potreba]. Možeš li [molba]?“",
+      "izvor": "Nenasilna komunikacija", "autor": "Marshall B. Rosenberg"
+    },
+    {
+      "id": "c01", "tema": "Kreativnost", "emoji": "🧩",
+      "naslov": "Kradi kao umjetnik",
+      "tekst": "Ništa nije potpuno originalno, svaki kreativni rad je mješavina utjecaja. Razlika je između kopiranja jednog izvora i učenja od mnogih, pa spajanja u nešto svoje. Proučavaj, remiksaj i transformiraj.",
+      "probaj": "Izaberi tri autora koje voliš i za svakog zapiši jednu stvar koju bi htio posvojiti.",
+      "izvor": "Kradi kao umjetnik", "autor": "Austin Kleon"
+    },
+    {
+      "id": "c02", "tema": "Kreativnost", "emoji": "✍️",
+      "naslov": "Dopusti si lošu prvu verziju",
+      "tekst": "Lamott tvrdi da gotovo svi dobri pisci prvo napišu užasnu prvu verziju. Prva verzija služi samo tome da nešto postoji, a kvaliteta nastaje u preradi. Perfekcionizam na početku najsigurniji je način da ne napišeš ništa.",
+      "probaj": "Piši 15 minuta bez brisanja i bez čitanja unatrag. Uređivanje ostavi za sutra.",
+      "izvor": "Bird by Bird", "autor": "Anne Lamott"
+    }
+  ]
+}
