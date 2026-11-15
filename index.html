@@ -3,58 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Ideje">
-<meta name="theme-color" content="#14161a">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="manifest" href="manifest.json?v=1">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>Ideje</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-  html, body { height: 100%; background: #14161a; color: #f2f2f2;
+  html, body { height: 100%; background: #f6f4ef; color: #1f2328;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; overflow: hidden; }
   #app { height: 100dvh; display: flex; flex-direction: column;
     padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); user-select: none; -webkit-user-select: none; }
   button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; }
 
-  /* Početna */
-  .home { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 24px; }
-  .home h1 { font-size: 40px; font-weight: 800; letter-spacing: -1px; }
-  .stat { color: #9aa0a6; margin-bottom: 18px; }
-  .big { display: flex; align-items: center; gap: 16px; width: 100%; padding: 20px 22px; border-radius: 18px;
-    background: #22252b; font-size: 20px; font-weight: 600; text-align: left; transition: transform .1s; }
-  .big:active { transform: scale(.97); }
-  .big span { font-size: 28px; width: 36px; text-align: center; }
-
   /* Gornja traka */
-  .top { display: flex; align-items: center; gap: 10px; padding: 10px 14px; height: 56px; }
-  .ikon { width: 44px; height: 44px; border-radius: 12px; background: #22252b; font-size: 20px; }
-  .tt { flex: 1; font-weight: 700; font-size: 17px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .cnt { color: #9aa0a6; font-variant-numeric: tabular-nums; }
-
-  /* Teme */
-  .grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 8px 16px 20px; align-content: start; }
-  .tema { border-radius: 18px; padding: 18px 14px; min-height: 104px; text-align: left; display: flex;
-    flex-direction: column; justify-content: space-between; font-weight: 700; font-size: 16px; }
-  .tema .i { font-size: 30px; }
-  .tema small { font-weight: 500; opacity: .8; }
+  .top { display: flex; align-items: center; gap: 10px; padding: 10px 18px; height: 58px; }
+  .tt { flex: 1; font-weight: 800; font-size: 22px; letter-spacing: -.5px; }
+  .cnt { color: #7a7f87; font-variant-numeric: tabular-nums; font-size: 15px; }
+  .filt { height: 40px; padding: 0 14px; border-radius: 99px; background: #fff; border: 1px solid #e3e0d8;
+    font-size: 15px; font-weight: 600; color: #7a7f87; }
+  .filt.on { background: #ffcf3f; border-color: #ffcf3f; color: #1f2328; }
 
   /* Kartica */
-  .stage { flex: 1; padding: 6px 16px; perspective: 1400px; min-height: 0; }
+  .stage { flex: 1; padding: 4px 16px 6px; perspective: 1400px; min-height: 0; }
   .card { position: relative; width: 100%; height: 100%; transform-style: preserve-3d;
     transition: transform .45s ease; touch-action: none; }
   .card.flip { transform: rotateY(180deg); }
-  .face { position: absolute; inset: 0; border-radius: 26px; padding: 26px 24px; display: flex; flex-direction: column;
+  .face { position: absolute; inset: 0; border-radius: 26px; padding: 24px 24px 20px; display: flex; flex-direction: column;
     backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden;
-    background: linear-gradient(160deg, var(--c), color-mix(in srgb, var(--c) 55%, #000)); box-shadow: 0 10px 30px rgba(0,0,0,.35); }
-  .back { transform: rotateY(180deg); }
-  .tag { align-self: flex-start; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 99px; background: rgba(0,0,0,.22); }
-  .emoji { font-size: clamp(56px, 16vw, 84px); margin: 22px 0 14px; line-height: 1; }
-  .face h2 { font-size: clamp(24px, 7vw, 32px); line-height: 1.15; margin-bottom: 14px; font-weight: 800; }
-  .face p { font-size: clamp(16px, 4.4vw, 19px); line-height: 1.5; opacity: .95; }
-  .face p.probaj { font-size: clamp(19px, 5.4vw, 23px); font-weight: 600; }
-  .src { margin-top: auto; padding-top: 14px; font-size: 14px; opacity: .8; font-style: italic; }
-  .hint { font-size: 12px; opacity: .55; margin-top: 8px; }
+    background: #fff; border-top: 8px solid var(--c); box-shadow: 0 6px 24px rgba(60, 50, 30, .10); }
+  .back { transform: rotateY(180deg); background: color-mix(in srgb, var(--c) 9%, #fff); }
+  .tag { align-self: flex-start; font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 99px;
+    color: var(--c); background: color-mix(in srgb, var(--c) 12%, #fff); }
+  .emoji { font-size: clamp(54px, 15vw, 80px); margin: 20px 0 12px; line-height: 1; }
+  .face h2 { font-size: clamp(24px, 7vw, 31px); line-height: 1.15; margin-bottom: 14px; font-weight: 800; letter-spacing: -.3px; }
+  .face p { font-size: clamp(16px, 4.4vw, 19px); line-height: 1.55; color: #3a3f46; }
+  .face p.probaj { font-size: clamp(19px, 5.4vw, 23px); font-weight: 600; color: #1f2328; }
+  .src { margin-top: auto; padding-top: 14px; font-size: 14px; color: #7a7f87; font-style: italic; }
+  .hint { font-size: 12px; color: #a3a8b0; margin-top: 6px; }
 
   .in-next .face { animation: inNext .28s ease; }
   .in-prev .face { animation: inPrev .28s ease; }
@@ -62,15 +52,16 @@
   @keyframes inPrev { from { opacity: 0; translate: -40px 0; } }
 
   /* Donja traka */
-  .bar { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px 16px; }
-  .bar button { width: 72px; height: 60px; border-radius: 18px; background: #22252b; font-size: 30px; transition: transform .1s; }
+  .bar { display: flex; justify-content: space-between; align-items: center; padding: 10px 24px 16px; }
+  .bar button { width: 76px; height: 60px; border-radius: 18px; background: #fff; border: 1px solid #e3e0d8;
+    font-size: 30px; color: #1f2328; transition: transform .1s; }
   .bar button:active { transform: scale(.92); }
-  .bar button:disabled { opacity: .25; }
-  .bar .fav { font-size: 28px; }
-  .bar .fav.on { color: #ffcc33; }
+  .bar button:disabled { opacity: .3; }
+  .bar .fav { font-size: 28px; color: #b9bdc4; }
+  .bar .fav.on { color: #f0a800; background: #fff6d6; border-color: #ffe08a; }
 
   .empty { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;
-    text-align: center; gap: 12px; padding: 30px; color: #9aa0a6; font-size: 17px; line-height: 1.5; }
+    text-align: center; gap: 12px; padding: 30px; color: #7a7f87; font-size: 17px; line-height: 1.5; }
   .empty div { font-size: 54px; }
 </style>
 </head>
@@ -79,63 +70,38 @@
 <script>
 const KLJUC = 'ideje_v1';
 let D = { teme: {}, kartice: [] };
-let store = { fav: [], seen: [] };
+let store = { fav: [], pos: 0, favPos: 0 };
 try { Object.assign(store, JSON.parse(localStorage.getItem(KLJUC)) || {}); } catch (e) {}
 function save() { try { localStorage.setItem(KLJUC, JSON.stringify(store)); } catch (e) {} }
 
-const st = { view: 'home', deck: [], pos: 0, flip: false, naslov: '', single: false, dir: '' };
+const st = { samoFav: false, flip: false, dir: '' };
 const app = document.getElementById('app');
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const isFav = id => store.fav.includes(id);
-const tema = ime => D.teme[ime] || { boja: '#444a52', ikona: '💡' };
-function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
-function idejaDana() {
-  const d = new Date();
-  const k = d.getFullYear() * 372 + d.getMonth() * 31 + d.getDate();
-  return D.kartice[(k * 2654435761) % D.kartice.length];
-}
+const tema = ime => D.teme[ime] || { boja: '#5b6470', ikona: '💡' };
+// Favoriti idu redom kojim su u cards.json
+const spil = () => st.samoFav ? D.kartice.filter(c => isFav(c.id)) : D.kartice;
+const posKey = () => st.samoFav ? 'favPos' : 'pos';
 
-function openDeck(kartice, naslov, single) {
-  Object.assign(st, { view: 'deck', deck: kartice, pos: 0, flip: false, naslov, single: !!single, dir: '' });
-  render();
-}
+function render() {
+  const s = spil();
+  let pos = Math.min(store[posKey()] || 0, Math.max(s.length - 1, 0));
+  store[posKey()] = pos;
 
-function renderHome() {
-  const ids = new Set(D.kartice.map(c => c.id));
-  const vid = store.seen.filter(id => ids.has(id)).length;
-  const fav = store.fav.filter(id => ids.has(id)).length;
-  return `<div class="home">
-    <h1>Ideje</h1>
-    <p class="stat">Viđeno ${vid}/${D.kartice.length} · ★ ${fav}</p>
-    <button class="big" data-a="rnd"><span>🎲</span>Nasumično</button>
-    <button class="big" data-a="teme"><span>🗂️</span>Po temi</button>
-    <button class="big" data-a="favs"><span>★</span>Favoriti</button>
-    <button class="big" data-a="dan"><span>☀️</span>Ideja dana</button>
-  </div>`;
-}
+  const top = `<header class="top">
+    <div class="tt">Ideje</div>
+    <div class="cnt">${s.length ? (pos + 1) + ' / ' + s.length : ''}</div>
+    <button class="filt ${st.samoFav ? 'on' : ''}" data-a="filt">★ ${store.fav.length}</button></header>`;
 
-function renderTeme() {
-  const btns = Object.keys(D.teme).map(ime => {
-    const t = tema(ime), n = D.kartice.filter(c => c.tema === ime).length;
-    return `<button class="tema" style="background:${t.boja}" data-a="tema" data-v="${esc(ime)}">
-      <span class="i">${t.ikona}</span><span>${esc(ime)}<br><small>${n} kartica</small></span></button>`;
-  }).join('');
-  return `<header class="top"><button class="ikon" data-a="home">⌂</button><div class="tt">Teme</div></header>
-    <div class="grid">${btns}</div>`;
-}
-
-function renderDeck() {
-  const top = `<header class="top"><button class="ikon" data-a="home">⌂</button>
-    <div class="tt">${esc(st.naslov)}</div>
-    <div class="cnt">${st.single || !st.deck.length ? '' : (st.pos + 1) + ' / ' + st.deck.length}</div></header>`;
-  if (!st.deck.length) {
-    return top + `<div class="empty"><div>☆</div>Još nemaš favorita.<br>Označi ★ na kartici koja ti se sviđa.</div>`;
+  if (!s.length) {
+    app.innerHTML = top + `<div class="empty"><div>☆</div>Još nemaš favorita.<br>Označi ★ na kartici koja ti se sviđa.</div>`;
+    return;
   }
-  const c = st.deck[st.pos], t = tema(c.tema), fav = isFav(c.id);
-  if (!store.seen.includes(c.id)) { store.seen.push(c.id); save(); }
+
+  const c = s[pos], t = tema(c.tema), fav = isFav(c.id);
   const izvor = esc(c.izvor) + (c.autor ? ' — ' + esc(c.autor) : '');
-  return top + `<main class="stage ${st.dir ? 'in-' + st.dir : ''}">
+  app.innerHTML = top + `<main class="stage ${st.dir ? 'in-' + st.dir : ''}">
     <div class="card ${st.flip ? 'flip' : ''}" id="card" style="--c:${t.boja}">
       <div class="face front">
         <div class="tag">${t.ikona} ${esc(c.tema)}</div>
@@ -154,44 +120,43 @@ function renderDeck() {
       </div>
     </div></main>
     <footer class="bar">
-      <button data-a="prev" ${st.single || st.pos === 0 ? 'disabled' : ''}>‹</button>
+      <button data-a="prev" ${pos === 0 ? 'disabled' : ''}>‹</button>
       <button class="fav ${fav ? 'on' : ''}" data-a="fav">${fav ? '★' : '☆'}</button>
-      <button data-a="next" ${st.single || st.pos === st.deck.length - 1 ? 'disabled' : ''}>›</button>
+      <button data-a="next" ${pos === s.length - 1 ? 'disabled' : ''}>›</button>
     </footer>`;
-}
-
-function render() {
-  app.innerHTML = st.view === 'home' ? renderHome() : st.view === 'teme' ? renderTeme() : renderDeck();
-  const card = document.getElementById('card');
-  if (card) bindCard(card);
+  bindCard(document.getElementById('card'));
+  save();
 }
 
 function go(delta) {
-  const p = st.pos + delta;
-  if (st.single || p < 0 || p >= st.deck.length) return;
-  Object.assign(st, { pos: p, flip: false, dir: delta > 0 ? 'next' : 'prev' });
+  const s = spil(), p = (store[posKey()] || 0) + delta;
+  if (p < 0 || p >= s.length) return;
+  store[posKey()] = p;
+  st.flip = false; st.dir = delta > 0 ? 'next' : 'prev';
   render();
 }
 
-function act(a, v) {
-  if (a === 'home') { st.view = 'home'; render(); }
-  else if (a === 'teme') { st.view = 'teme'; render(); }
-  else if (a === 'rnd') openDeck(shuffle([...D.kartice]), 'Nasumično');
-  else if (a === 'tema') openDeck(D.kartice.filter(c => c.tema === v), v);
-  else if (a === 'favs') openDeck(D.kartice.filter(c => isFav(c.id)), 'Favoriti');
-  else if (a === 'dan') openDeck([idejaDana()], 'Ideja dana', true);
-  else if (a === 'prev') go(-1);
+function flip() {
+  const card = document.getElementById('card');
+  if (!card) return;
+  st.flip = !st.flip;
+  card.classList.toggle('flip', st.flip);
+}
+
+function act(a) {
+  if (a === 'prev') go(-1);
   else if (a === 'next') go(1);
+  else if (a === 'filt') { st.samoFav = !st.samoFav; st.flip = false; st.dir = ''; render(); }
   else if (a === 'fav') {
-    const id = st.deck[st.pos].id;
+    const s = spil(), id = s[store[posKey()]].id;
     store.fav = isFav(id) ? store.fav.filter(x => x !== id) : [...store.fav, id];
-    save(); st.dir = ''; render();
+    st.dir = ''; render();
   }
 }
 
 app.addEventListener('click', e => {
   const b = e.target.closest('[data-a]');
-  if (b && !b.disabled) act(b.dataset.a, b.dataset.v);
+  if (b && !b.disabled) act(b.dataset.a);
 });
 
 // Dodir na karticu = okreni; povlačenje lijevo/desno = sljedeća/prethodna
@@ -203,15 +168,14 @@ function bindCard(card) {
     const dx = e.clientX - x0, dy = e.clientY - y0;
     x0 = null;
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
-    else if (Math.abs(dx) < 12 && Math.abs(dy) < 12) { st.flip = !st.flip; card.classList.toggle('flip', st.flip); }
+    else if (Math.abs(dx) < 12 && Math.abs(dy) < 12) flip();
   });
 }
 
 document.addEventListener('keydown', e => {
-  if (st.view !== 'deck') return;
   if (e.key === 'ArrowRight') go(1);
   else if (e.key === 'ArrowLeft') go(-1);
-  else if (e.key === ' ') { e.preventDefault(); const c = document.getElementById('card'); if (c) { st.flip = !st.flip; c.classList.toggle('flip', st.flip); } }
+  else if (e.key === ' ') { e.preventDefault(); flip(); }
 });
 
 fetch('cards.json', { cache: 'no-cache' })
@@ -220,6 +184,8 @@ fetch('cards.json', { cache: 'no-cache' })
   .catch(() => {
     app.innerHTML = `<div class="empty"><div>⚠️</div>Ne mogu učitati cards.json.<br>Provjeri je li datoteka uz index.html i je li JSON ispravan.</div>`;
   });
+
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 </script>
 </body>
 </html>

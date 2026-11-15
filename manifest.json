@@ -1,0 +1,16 @@
+{
+  "id": "/ideje-app",
+  "name": "Ideje",
+  "short_name": "Ideje",
+  "description": "Kartice s idejama iz knjiga i podcasta",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4ef",
+  "theme_color": "#f6f4ef",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
